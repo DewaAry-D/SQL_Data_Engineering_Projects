@@ -1,4 +1,8 @@
+-- local
 -- duckdb dw_mart.duckdb -c ".read build_dw_marts.sql"
+
+-- Mother DuckDB, make sure already create database, name : 'dw_mart'
+-- duckdb md:dw_mart -c ".read build_dw_marts.sql"
 
 -- Step 1: DW - Create star schema tables
 .read 01_create_tables_dw.sql
