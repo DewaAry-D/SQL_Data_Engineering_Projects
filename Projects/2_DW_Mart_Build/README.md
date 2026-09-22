@@ -110,7 +110,7 @@ Priority role tracking with incremental updates using MERGE operations.
 - **Grain:** One row per job posting with priority level assignment
 - **Key Features:** **MERGE operations for incremental updates** - demonstrates production-ready upsert patterns (INSERT, UPDATE, DELETE in single statement)
 
-### Company Mart (Optional)
+### Company Mart
 
 Company hiring trends by role, location, and month.
 
