@@ -7,24 +7,24 @@ A SQL project analyzing the data engineer job market using real world job postin
 
 ## 🧾 Executive Summery
 
-- ✅ **Project scope**: Built **3 analytical queries** that answer key questions about the data engineer job market
-- ✅ **Data modeling**: Used **multi-table joins** across fact and dimension tables to extract insights
-- ✅ **Analytics**: Applied **aggregations, filtering, and sorting** to find top skills by demand, salary, and overall value
-- ✅ **Outcomes**: Delivered **actionable insights** on SQL/Python dominance, cloud trends, and salary patterns
+- **Project scope**: Built **3 analytical queries** that answer key questions about the data engineer job market
+- **Data modeling**: Used **multi-table joins** across fact and dimension tables to extract insights
+- **Analytics**: Applied **aggregations, filtering, and sorting** to find top skills by demand, salary, and overall value
+- **Outcomes**: Delivered **actionable insights** on SQL/Python dominance, cloud trends, and salary patterns
 
 if you only have a minute, review this:
 
 1. [top_demend_skill.sql](top_demend_skill.sql) - demand analisis with multi-table joins     
 2. [top_paying_skill.sql](top_paying_skill.sql) - salary analysis with aggregations
-3.  [top_demend_skill.sql](top_demend_skill.sql) - combined demand/salary optimization query
+3. [top_demend_skill.sql](top_demend_skill.sql) - combined demand/salary optimization query
 
 ## 🧩 Problem $ Context
 
 Job market analysts need to answer questions like:
 
-- 🎯 Most in-demand: Which skills are most in-demand for data engineers?
-- 💰 Highest paid: Which skills command the highest salaries?
-- ⚖️ Best trade-off: What is the optimal skill set balancing demand and compensation?
+- Most in-demand: Which skills are most in-demand for data engineers?
+- Highest paid: Which skills command the highest salaries?
+- Best trade-off: What is the optimal skill set balancing demand and compensation?
 
 This project analyzes a data warehouse built using a star schema design. The warehouse structure consists of:  
 ![Data Werehouse](../../images/1_2_Data_Warehouse.png)
@@ -39,11 +39,11 @@ By querying across these interconnected tables, I extracted insights about skill
 
 ## 🧰 Tech Stack
 
-- 🐤 **Query Engine**: DuckDB for fast OLAP-style analytical queries
-- 🧮 **Language**: SQL (ANSI-style with analytical functions)
-- 📊 **Data Model**: Star schema with fact + dimension + bridge tables
-- 🛠️ **Development**: VS Code for SQL editing + Terminal for DuckDB CLI
-- 📦 **Version Control**: Git/GitHub for versioned SQL scripts
+- **Query Engine**: DuckDB for fast OLAP-style analytical queries
+- **Language**: SQL (ANSI-style with analytical functions)
+- **Data Model**: Star schema with fact + dimension + bridge tables
+- **Development**: VS Code for SQL editing + Terminal for DuckDB CLI
+- **Version Control**: Git/GitHub for versioned SQL scripts
 
 ## Analisis Overview
 ### Query Structure
@@ -51,10 +51,10 @@ By querying across these interconnected tables, I extracted insights about skill
 2. Top Paying Skills – Analyzes the 25 highest-paying skills with salary and demand metrics
 3. Optimal Skills – Calculates an optimal score using natural log of demand combined with median salary to identify the most valuable skills to learn
 ### Key Insights
-- 🧠 Core languages: SQL and Python each appear in ~29,000 job postings, making them the most demanded skills
-- ☁️ Cloud platforms: AWS and Azure are critical for modern data engineering roles-
-- 🧱 Infra & tooling: Kubernetes, Docker, and Terraform are associated with premium salaries
-- 🔥 Big data tools: Apache Spark shows strong demand with competitive compensation
+- Core languages: SQL and Python each appear in ~29,000 job postings, making them the most demanded skills
+- Cloud platforms: AWS and Azure are critical for modern data engineering roles-
+- Infra & tooling: Kubernetes, Docker, and Terraform are associated with premium salaries
+- Big data tools: Apache Spark shows strong demand with competitive compensation
 
 ## SQL Skill Demonstrated
 
